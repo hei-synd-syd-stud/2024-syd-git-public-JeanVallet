@@ -43,7 +43,8 @@ Après avoir fait le premier commit, et avoir utilisé la commande `git log --on
 
 ### Task 6
 
-Quand on effectue le `git checkout <SHA1>` avec le **short hash** de l'`initial commit` on revient à la version initiale, ce qui correspond à ce dont on disposait après le `git clone`. Tout les fichier et les dossier créés ne sont donc plus présents dans le disque dur du PC mais ils sont sauvé dans la **stagging area** (Le fichier `README.md` n'existe pas et le fichier `answers.md` ne contient aucune reponse). Quand on fait un `git checkout main` on revient à la dernière version et tous les fichier et éventuels dossier créés sont à nouveau disponible dans le PC. 
+Quand on effectue le `git checkout <SHA1>` avec le **short hash**, Git passe en mode "détaché" (`detached HEAD`). Cela signifie que `HEAD` pointe directement sur le `initial commit`, et non sur une branche comme `main`. Git restaure les fichiers exactement tels qu'ils étaient au moment de ce commit. Ainsi, on revient au commit initial, les fichiers et dossiers ajoutés dans les commits ultérieurs disparaissent temporairement du disque dur, car Git a restauré l’état du dépôt à la date du commit initial. En effet le fichier `README.md` n'est plus présent et le fichier `answers.md` ne contient aucune reponse.
+Tout les fichier et les dossier créés ne sont donc plus présents dans le disque dur du PC mais ils sont sauvé dans la **stagging area** (Le fichier `README.md` n'existe pas et le fichier `answers.md` ne contient aucune reponse). Quand on fait un `git checkout main` on revient à la dernière version et tous les fichier et éventuels dossier créés sont à nouveau disponible dans le PC. En revenant à la branche `main` avec `git checkout main`, on revient à la version la plus récente, où tous les fichiers et dossiers créés ultérieurement sont de nouveau disponibles.
 
 ## Gitgraph
 
