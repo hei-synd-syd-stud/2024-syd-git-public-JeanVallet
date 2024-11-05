@@ -28,11 +28,8 @@ Si on consulte à nouveau les infos de `git status` on peut voir que les changem
 
 Après avoir fait le premier commit, et avoir utilisé la commande `git log --oneline` j'obtient:
 
-
 *febb11f* (**HEAD** -> **main**) *ADD: README file.*
 *5da930b* (**origin/main**, **origin/HEAD**) *Initial commit*
-
-
 
 - La chaîne de caractère `febb11f` au début est un identifiant abrégé qui est générer automatiquement par Git. Cet identifiant est appelé **hash** et il est utilisé pour référencer précisément ce commit
 
@@ -45,6 +42,8 @@ Après avoir fait le premier commit, et avoir utilisé la commande `git log --on
 - Enfin le mot `Initial commit` indique le début de la branche ou bien le tout premier commit d'un dépôt Git
 
 ### Task 6
+
+Quand on effectue le `git checkout <SHA1>` avec le **short hash** de l'`initial commit` on revient à la version initiale, ce qui correspond à ce dont on disposait après le `git clone`. Tout les fichier et les dossier créés ne sont donc plus présents dans le disque dur du PC mais ils sont sauvé dans la **stagging area** (Le fichier `README.md` n'existe pas et le fichier `answers.md` ne contient aucune reponse). Quand on fait un `git checkout main` on revient à la dernière version et tous les fichier et éventuels dossier créés sont à nouveau disponible dans le PC. 
 
 ## Gitgraph
 
