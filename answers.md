@@ -51,3 +51,25 @@ Tout les fichier et les dossier créés ne sont donc plus présents dans le disq
 ### Task 7
 
 ![Gitgraph](img/gitgraph.svg)
+
+1. `develop` est le nom qui a été donné à la branche bleu.
+
+2. `baa6795` est le **short hash** générer automatiquement par Git pour référencer précisément ce commit.
+
+3. `Merge branch 'feature-auth' into 'develop'` est le commentaire qui indique qu'est ce qui a été fait dans le dernier commit.
+
+4. `ByteMe Bob <bob.byteme@hevs.ch>` indique l'indentité de l'auteru du commit
+
+5. `v1.0.0` indique la version de la branche main où:
+   
+   - `1` représente la version majeure,
+   
+   - `0` représente la version mineure,
+   
+   - `0` représente le correctif ou patch.
+   - `v` indique le mot "version"
+6- Le dernier noeud est appelé `HEAD` et il correspond au dernier commit effectué sur la branche `develop`. Ici on a fait aussi un merge entre la branche `feature-auth` et `evelop`.
+7- Le noeud indique un commit de la nouvelle branche `feature-auth` qui vient du merge entre la branche `main` et `develop`. Cette branche à été crée par `<carol.codequeen@hevs.ch` et elle possède le **short hash** `c93cfcc`.
+8- Ce noeud est le dernier de la branche `main` où on effectue un merge entre cette branche et `develop`.
+9- La ligne bleu indique toute la branche `develop`.
+10- La ligne grise indique toute la branche `main`.
