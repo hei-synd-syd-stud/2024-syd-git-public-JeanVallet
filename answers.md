@@ -68,8 +68,8 @@ Tout les fichier et les dossier créés ne sont donc plus présents dans le disq
    
    - `0` représente le correctif ou patch.
    - `v` indique le mot "version"
-6- Le dernier noeud est appelé `HEAD` et il correspond au dernier commit effectué sur la branche `develop`. Ici on a fait aussi un merge entre la branche `feature-auth` et `evelop`.
-7- Le noeud indique un commit de la nouvelle branche `feature-auth` qui vient du merge entre la branche `main` et `develop`. Cette branche à été crée par `<carol.codequeen@hevs.ch` et elle possède le **short hash** `c93cfcc`.
-8- Ce noeud est le dernier de la branche `main` où on effectue un merge entre cette branche et `develop`.
-9- La ligne bleu indique toute la branche `develop`.
-10- La ligne grise indique toute la branche `main`.
+6. Le dernier noeud est appelé `HEAD` et il correspond au dernier commit effectué sur la branche `develop`. Ici on a fait aussi un merge entre la branche `feature-auth` et `evelop`.
+7. Le noeud indique un commit de la nouvelle branche `feature-auth` qui vient du merge entre la branche `main` et `develop`. Cette branche à été crée par `<carol.codequeen@hevs.ch` et elle possède le **short hash** `c93cfcc`.
+8. Ce noeud est le dernier de la branche `main` où on effectue un merge entre cette branche et `develop`.
+9. La ligne bleu indique toute la branche `develop`.
+10. La ligne grise indique toute la branche `main`.
